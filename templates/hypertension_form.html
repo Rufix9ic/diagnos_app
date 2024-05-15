@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypertension Form</title>
+</head>
+<body>
+    <h1>Hypertension Test Form</h1>
+    <form method="POST" action="/predict">
+        Age: <input type="number" id="age" name="age" placeholder="Age" value="45" required><br>
+        Sex: <select id="sex" name="sex" required>
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+             </select><br>
+        CP: <input type="number" id="cp" name="cp" placeholder="Chest Pain Type" value="0" required><br>
+        Trestbps: <input type="number" id="trestbps" name="trestbps" placeholder="Resting Blood Pressure" value="125" required><br>
+        Chol: <input type="number" id="chol" name="chol" placeholder="Cholesterol" value="304" required><br>
+        FBS: <input type="number" id="fbs" name="fbs" placeholder="Fasting Blood Sugar" value="0" required><br>
+        RestECG: <input type="number" id="restecg" name="restecg" placeholder="Resting ECG Result" value="0" required><br>
+        Thalach: <input type="number" id="thalach" name="thalach" placeholder="Max Heart Rate" value="162" required><br>
+        Exang: <input type="number" id="exang" name="exang" placeholder="Exercise Induced Angina" value="1" required><br>
+        Oldpeak: <input type="number" id="oldpeak" name="oldpeak" placeholder="ST Depression" value="0.0" required><br>
+        Slope: <input type="number" id="slope" name="slope" placeholder="Slope of the Peak Exercise ST Segment" value="0" required><br>
+        CA: <input type="number" id="ca" name="ca" placeholder="Number of Major Vessels Colored by Flouroscopy" value="0" required><br>
+        Thal: <input type="number" id="thal" name="thal" placeholder="Thalassemia" value="0" required><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
